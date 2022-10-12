@@ -15,12 +15,14 @@ const QuizQuestions = ({ques}) => {
             alert('You have choosen the wrong asnwer')
         }
     }
-    
+    const handleAnswerShow = () => {
+        alert(`Here is the correct ans:  ${ques.correctAnswer}`)
+    }
     return (
         <div className='lg:w-1/2 m-auto my-5 p-5 grid justify-items-center border-2 border-slate-700 rounded'>
             <div  className='w-full flex justify-between  items-center '>
                 <h1 className=' mb-3 text-xl font-bold'>Question   : {question.slice(3, -4)}</h1>
-                <FontAwesomeIcon className='mb-1' icon={faEye}></FontAwesomeIcon>
+                <FontAwesomeIcon onClick={handleAnswerShow} className='mb-1 cursor-pointer' icon={faEye}></FontAwesomeIcon>
             </div>
             
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-3   items-center '>
