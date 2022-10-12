@@ -6,6 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const QuizQuestions = ({ques}) => {
     console.log(ques)
     const {question, options} = ques;
+    
+    const handleCorrectAnsCheck = (option) => {
+        if(option === ques.correctAnswer){
+            alert('You have chosen the correct answer')
+        }
+        else{
+            alert('You have choosen the wrong asnwer')
+        }
+    }
+    
     return (
         <div className='lg:w-1/2 m-auto my-5 p-5 grid justify-items-center border-2 border-slate-700 rounded'>
             <div  className='w-full flex justify-between  items-center '>
@@ -15,7 +25,7 @@ const QuizQuestions = ({ques}) => {
             
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-3   items-center '>
                 {
-                    options.map(option => <QuesOptions option={option}></QuesOptions>)
+                    options.map(option => <QuesOptions key={option} handleCorrectAnsCheck={handleCorrectAnsCheck} option={option}></QuesOptions>)
                 }
             </div>
         </div>
