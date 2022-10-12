@@ -1,3 +1,15 @@
+# Project name
+Thename of this Project is Quiz Today.
+
+# Live Website Link
+Live website is (https://helpful-shortbread-6586c7.netlify.app/).
+
+# About this Website
+1. This is a quiz website
+2. In this website I used react router to create a single page website
+3. I got the quiz data from online api and showed the quizs
+4. I used tailwind and did mobile responsive also
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
