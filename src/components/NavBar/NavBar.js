@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+    
     return (
         <div className='bg-slate-600  p-4 flex justify-center'>
             <nav className='flex w-4/5  justify-between items-center'>
